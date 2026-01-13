@@ -15,23 +15,23 @@ def largestElement(nums):
                 max = i
         return max
 
-if __name__ == "__main__":
-    l = [3, 3, 6,1]
-    print(largestElement(l))
+# if __name__ == "__main__":
+#     l = [3, 3, 6,1]
+#     print(largestElement(l))
 
     # Correct implementation of the largestElement function
     
-# def largestElement(nums):
-#     if not nums:  # Handle empty array case
-#         return None
-#     max_element = nums[0]
-#     for num in nums:
-#         if num > max_element:
-#             max_element = num
-#     return max_element
+def largestElement(nums):
+    if not nums:  # Handle empty array case
+        return None
+    max_element = nums[0]
+    for num in nums:
+        if num > max_element:
+            max_element = num
+    return max_element
 
-# if __name__ == "__main__":
-#     l = [3, 3, 6, 1]
-#     print(largestElement(l))  # Output: 6
-#     l = [3, 3, 0, 99, -40]
-#     print(largestElement(l))  # Output: 99
+if __name__ == "__main__":
+    l = [3, 3, 6, 1]
+    print(largestElement(l))  # Output: 6
+    l = [3, 3, 0, 99, -40]
+    print(largestElement(l))  # Output: 99
